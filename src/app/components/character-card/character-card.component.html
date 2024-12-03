@@ -1,0 +1,22 @@
+<div class="card mr-3 mb-3">
+  <img
+    [src]="character.image"
+    alt="Character Image"
+    class="card-img-top"
+  />
+
+  <div class="card-body">
+    <h5 class="card-title">{{ character.name }}</h5>
+  </div>
+
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      Status:
+      <span class="badge badge-pill badge-dark">{{ character.status }}</span>
+    </li>
+    <li class="list-group-item">
+      Species: {{ character.species }}
+    </li>
+  </ul>
+</div>
+

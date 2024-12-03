@@ -1,0 +1,44 @@
+<div class="characters-table">
+  <div class="row mb-3 mt-3">
+    <button
+      class="btn btn-primary"
+      [disabled]="!hasPreviousPage"
+      (click)="fetchPreviousPage()"
+    >
+      Previous Page
+    </button>
+    <div class="col-6"></div>
+    <button
+      class="btn btn-primary"
+      [disabled]="!hasNextPage"
+      (click)="fetchNextPage()"
+    >
+      Next Page
+    </button>
+  </div>
+
+  <div class="row">
+    <CharacterCard
+      *ngFor="let character of characters"
+      [character]="character"
+    ></CharacterCard>
+  </div>
+
+  <div class="row mb-3 mt-3">
+    <button
+      class="btn btn-primary"
+      [disabled]="!hasPreviousPage"
+      (click)="fetchPreviousPage()"
+    >
+      Previous Page
+    </button>
+    <div class="col-6"></div>
+    <button
+      class="btn btn-primary"
+      [disabled]="!hasNextPage"
+      (click)="fetchNextPage()"
+    >
+      Next Page
+    </button>
+  </div>
+</div>
